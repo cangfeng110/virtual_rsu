@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o CMakeFiles/virtual_light.dir/src/light_message.cpp.o  -o virtual_light -rdynamic 

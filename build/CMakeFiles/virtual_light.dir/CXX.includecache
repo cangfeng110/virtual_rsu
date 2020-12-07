@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/uisee/workspace/virtual_rsu/src/async_subscribe.cpp
+iostream
+-
+cstdlib
+-
+string
+-
+cstring
+-
+cctype
+-
+thread
+-
+chrono
+-
+mqtt/async_client.h
+/home/uisee/workspace/virtual_rsu/src/mqtt/async_client.h
+
+/home/uisee/workspace/virtual_rsu/src/light_message.cpp
+light_message.h
+/home/uisee/workspace/virtual_rsu/src/light_message.h
+
+/home/uisee/workspace/virtual_rsu/src/light_message.h
+nlohmann/json.hpp
+/home/uisee/workspace/virtual_rsu/src/nlohmann/json.hpp
+fstream
+-
+string
+-
+iostream
+-
+
