@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named async_subscribe
+
+# Build rule for target.
+async_subscribe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 async_subscribe
+.PHONY : async_subscribe
+
+# fast build rule for target.
+async_subscribe/fast:
+	$(MAKE) -f CMakeFiles/async_subscribe.dir/build.make CMakeFiles/async_subscribe.dir/build
+.PHONY : async_subscribe/fast
+
+#=============================================================================
 # Target rules for targets named virtual_light
 
 # Build rule for target.
@@ -123,32 +136,62 @@ virtual_light/fast:
 	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/build
 .PHONY : virtual_light/fast
 
-src/async_subscribe.o: src/async_subscribe.cpp.o
+async_subscribe.o: async_subscribe.cpp.o
 
-.PHONY : src/async_subscribe.o
+.PHONY : async_subscribe.o
 
 # target to build an object file
-src/async_subscribe.cpp.o:
-	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o
-.PHONY : src/async_subscribe.cpp.o
+async_subscribe.cpp.o:
+	$(MAKE) -f CMakeFiles/async_subscribe.dir/build.make CMakeFiles/async_subscribe.dir/async_subscribe.cpp.o
+.PHONY : async_subscribe.cpp.o
 
-src/async_subscribe.i: src/async_subscribe.cpp.i
+async_subscribe.i: async_subscribe.cpp.i
 
-.PHONY : src/async_subscribe.i
+.PHONY : async_subscribe.i
 
 # target to preprocess a source file
-src/async_subscribe.cpp.i:
-	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.i
-.PHONY : src/async_subscribe.cpp.i
+async_subscribe.cpp.i:
+	$(MAKE) -f CMakeFiles/async_subscribe.dir/build.make CMakeFiles/async_subscribe.dir/async_subscribe.cpp.i
+.PHONY : async_subscribe.cpp.i
 
-src/async_subscribe.s: src/async_subscribe.cpp.s
+async_subscribe.s: async_subscribe.cpp.s
 
-.PHONY : src/async_subscribe.s
+.PHONY : async_subscribe.s
 
 # target to generate assembly for a file
-src/async_subscribe.cpp.s:
-	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.s
-.PHONY : src/async_subscribe.cpp.s
+async_subscribe.cpp.s:
+	$(MAKE) -f CMakeFiles/async_subscribe.dir/build.make CMakeFiles/async_subscribe.dir/async_subscribe.cpp.s
+.PHONY : async_subscribe.cpp.s
+
+src/callback.o: src/callback.cpp.o
+
+.PHONY : src/callback.o
+
+# target to build an object file
+src/callback.cpp.o:
+	$(MAKE) -f CMakeFiles/async_subscribe.dir/build.make CMakeFiles/async_subscribe.dir/src/callback.cpp.o
+	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/callback.cpp.o
+.PHONY : src/callback.cpp.o
+
+src/callback.i: src/callback.cpp.i
+
+.PHONY : src/callback.i
+
+# target to preprocess a source file
+src/callback.cpp.i:
+	$(MAKE) -f CMakeFiles/async_subscribe.dir/build.make CMakeFiles/async_subscribe.dir/src/callback.cpp.i
+	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/callback.cpp.i
+.PHONY : src/callback.cpp.i
+
+src/callback.s: src/callback.cpp.s
+
+.PHONY : src/callback.s
+
+# target to generate assembly for a file
+src/callback.cpp.s:
+	$(MAKE) -f CMakeFiles/async_subscribe.dir/build.make CMakeFiles/async_subscribe.dir/src/callback.cpp.s
+	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/callback.cpp.s
+.PHONY : src/callback.cpp.s
 
 src/light_message.o: src/light_message.cpp.o
 
@@ -156,6 +199,7 @@ src/light_message.o: src/light_message.cpp.o
 
 # target to build an object file
 src/light_message.cpp.o:
+	$(MAKE) -f CMakeFiles/async_subscribe.dir/build.make CMakeFiles/async_subscribe.dir/src/light_message.cpp.o
 	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/light_message.cpp.o
 .PHONY : src/light_message.cpp.o
 
@@ -165,6 +209,7 @@ src/light_message.i: src/light_message.cpp.i
 
 # target to preprocess a source file
 src/light_message.cpp.i:
+	$(MAKE) -f CMakeFiles/async_subscribe.dir/build.make CMakeFiles/async_subscribe.dir/src/light_message.cpp.i
 	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/light_message.cpp.i
 .PHONY : src/light_message.cpp.i
 
@@ -174,8 +219,36 @@ src/light_message.s: src/light_message.cpp.s
 
 # target to generate assembly for a file
 src/light_message.cpp.s:
+	$(MAKE) -f CMakeFiles/async_subscribe.dir/build.make CMakeFiles/async_subscribe.dir/src/light_message.cpp.s
 	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/light_message.cpp.s
 .PHONY : src/light_message.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -185,13 +258,20 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... async_subscribe"
 	@echo "... virtual_light"
-	@echo "... src/async_subscribe.o"
-	@echo "... src/async_subscribe.i"
-	@echo "... src/async_subscribe.s"
+	@echo "... async_subscribe.o"
+	@echo "... async_subscribe.i"
+	@echo "... async_subscribe.s"
+	@echo "... src/callback.o"
+	@echo "... src/callback.i"
+	@echo "... src/callback.s"
 	@echo "... src/light_message.o"
 	@echo "... src/light_message.i"
 	@echo "... src/light_message.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

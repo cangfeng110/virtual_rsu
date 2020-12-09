@@ -57,33 +57,9 @@ include CMakeFiles/virtual_light.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/virtual_light.dir/flags.make
 
-CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o: CMakeFiles/virtual_light.dir/flags.make
-CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o: ../src/async_subscribe.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uisee/workspace/virtual_rsu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o -c /home/uisee/workspace/virtual_rsu/src/async_subscribe.cpp
-
-CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uisee/workspace/virtual_rsu/src/async_subscribe.cpp > CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.i
-
-CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uisee/workspace/virtual_rsu/src/async_subscribe.cpp -o CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.s
-
-CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o.requires:
-
-.PHONY : CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o.requires
-
-CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o.provides: CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o.requires
-	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o.provides.build
-.PHONY : CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o.provides
-
-CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o.provides.build: CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o
-
-
 CMakeFiles/virtual_light.dir/src/light_message.cpp.o: CMakeFiles/virtual_light.dir/flags.make
 CMakeFiles/virtual_light.dir/src/light_message.cpp.o: ../src/light_message.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uisee/workspace/virtual_rsu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/virtual_light.dir/src/light_message.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uisee/workspace/virtual_rsu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/virtual_light.dir/src/light_message.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/virtual_light.dir/src/light_message.cpp.o -c /home/uisee/workspace/virtual_rsu/src/light_message.cpp
 
 CMakeFiles/virtual_light.dir/src/light_message.cpp.i: cmake_force
@@ -105,19 +81,69 @@ CMakeFiles/virtual_light.dir/src/light_message.cpp.o.provides: CMakeFiles/virtua
 CMakeFiles/virtual_light.dir/src/light_message.cpp.o.provides.build: CMakeFiles/virtual_light.dir/src/light_message.cpp.o
 
 
+CMakeFiles/virtual_light.dir/src/main.cpp.o: CMakeFiles/virtual_light.dir/flags.make
+CMakeFiles/virtual_light.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uisee/workspace/virtual_rsu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/virtual_light.dir/src/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/virtual_light.dir/src/main.cpp.o -c /home/uisee/workspace/virtual_rsu/src/main.cpp
+
+CMakeFiles/virtual_light.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/virtual_light.dir/src/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uisee/workspace/virtual_rsu/src/main.cpp > CMakeFiles/virtual_light.dir/src/main.cpp.i
+
+CMakeFiles/virtual_light.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/virtual_light.dir/src/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uisee/workspace/virtual_rsu/src/main.cpp -o CMakeFiles/virtual_light.dir/src/main.cpp.s
+
+CMakeFiles/virtual_light.dir/src/main.cpp.o.requires:
+
+.PHONY : CMakeFiles/virtual_light.dir/src/main.cpp.o.requires
+
+CMakeFiles/virtual_light.dir/src/main.cpp.o.provides: CMakeFiles/virtual_light.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/virtual_light.dir/src/main.cpp.o.provides
+
+CMakeFiles/virtual_light.dir/src/main.cpp.o.provides.build: CMakeFiles/virtual_light.dir/src/main.cpp.o
+
+
+CMakeFiles/virtual_light.dir/src/callback.cpp.o: CMakeFiles/virtual_light.dir/flags.make
+CMakeFiles/virtual_light.dir/src/callback.cpp.o: ../src/callback.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uisee/workspace/virtual_rsu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/virtual_light.dir/src/callback.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/virtual_light.dir/src/callback.cpp.o -c /home/uisee/workspace/virtual_rsu/src/callback.cpp
+
+CMakeFiles/virtual_light.dir/src/callback.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/virtual_light.dir/src/callback.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uisee/workspace/virtual_rsu/src/callback.cpp > CMakeFiles/virtual_light.dir/src/callback.cpp.i
+
+CMakeFiles/virtual_light.dir/src/callback.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/virtual_light.dir/src/callback.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uisee/workspace/virtual_rsu/src/callback.cpp -o CMakeFiles/virtual_light.dir/src/callback.cpp.s
+
+CMakeFiles/virtual_light.dir/src/callback.cpp.o.requires:
+
+.PHONY : CMakeFiles/virtual_light.dir/src/callback.cpp.o.requires
+
+CMakeFiles/virtual_light.dir/src/callback.cpp.o.provides: CMakeFiles/virtual_light.dir/src/callback.cpp.o.requires
+	$(MAKE) -f CMakeFiles/virtual_light.dir/build.make CMakeFiles/virtual_light.dir/src/callback.cpp.o.provides.build
+.PHONY : CMakeFiles/virtual_light.dir/src/callback.cpp.o.provides
+
+CMakeFiles/virtual_light.dir/src/callback.cpp.o.provides.build: CMakeFiles/virtual_light.dir/src/callback.cpp.o
+
+
 # Object files for target virtual_light
 virtual_light_OBJECTS = \
-"CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o" \
-"CMakeFiles/virtual_light.dir/src/light_message.cpp.o"
+"CMakeFiles/virtual_light.dir/src/light_message.cpp.o" \
+"CMakeFiles/virtual_light.dir/src/main.cpp.o" \
+"CMakeFiles/virtual_light.dir/src/callback.cpp.o"
 
 # External object files for target virtual_light
 virtual_light_EXTERNAL_OBJECTS =
 
-virtual_light: CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o
 virtual_light: CMakeFiles/virtual_light.dir/src/light_message.cpp.o
+virtual_light: CMakeFiles/virtual_light.dir/src/main.cpp.o
+virtual_light: CMakeFiles/virtual_light.dir/src/callback.cpp.o
 virtual_light: CMakeFiles/virtual_light.dir/build.make
 virtual_light: CMakeFiles/virtual_light.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uisee/workspace/virtual_rsu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable virtual_light"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uisee/workspace/virtual_rsu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable virtual_light"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/virtual_light.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,8 +151,9 @@ CMakeFiles/virtual_light.dir/build: virtual_light
 
 .PHONY : CMakeFiles/virtual_light.dir/build
 
-CMakeFiles/virtual_light.dir/requires: CMakeFiles/virtual_light.dir/src/async_subscribe.cpp.o.requires
 CMakeFiles/virtual_light.dir/requires: CMakeFiles/virtual_light.dir/src/light_message.cpp.o.requires
+CMakeFiles/virtual_light.dir/requires: CMakeFiles/virtual_light.dir/src/main.cpp.o.requires
+CMakeFiles/virtual_light.dir/requires: CMakeFiles/virtual_light.dir/src/callback.cpp.o.requires
 
 .PHONY : CMakeFiles/virtual_light.dir/requires
 

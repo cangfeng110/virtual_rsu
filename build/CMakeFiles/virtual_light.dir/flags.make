@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -g -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/uisee/workspace/virtual_rsu/src -I/home/uisee/workspace/virtual_rsu/src/thirdparty -I/home/uisee/workspace/virtual_rsu/src/thirdparty/mqtt -I/home/uisee/workspace/virtual_rsu/src/thirdparty/mqttc -I/home/uisee/workspace/virtual_rsu/src/thirdparty/nlohmann 
 
