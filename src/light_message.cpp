@@ -1,11 +1,17 @@
 #include "light_message.h"
 
+#include <cstdlib>
+
 using namespace traffic_light;
 
 LightMessage::LightMessage(std::string file) {
     std::ifstream read_file(file);
     if (read_file.is_open()) {
+        std::cout << "read traffic_light_status.json success" << std::endl;
         read_file >> light_message_;
+    } else {
+        std::cout << "read traffic_light_status.json failed" << std::endl;
+        exit(EXIT_FAILURE);
     }
     read_file.close();
 };
@@ -39,4 +45,12 @@ bool LightMessage::UpdateMessage(std::string in) {
         std::cout << exc.what() << std::endl;
         return false;
     }
+}
+
+std::string LightMessage::GetLightMessage(int map_id) {
+    auto& params = light_message_["params"];
+    if (params.empty())
+        return std::string("light status empty");
+    params["attached_map"] = map_id;
+    return light_message_.dump();
 }

@@ -3,7 +3,7 @@
     "device_id":"light_test",
     "params":
     {
-        "attached_map":2020061611,
+        "attached_map": 2020061611,
         "device_loc":{"x":0,"y":0,"z":0},
         "lights":
         [
@@ -18,7 +18,7 @@
                     "height":1.470000,
                     "width":0.640000
                 },
-                "control_status":true,
+                "control_status":false,
                 "status":
                 [
                     {"dir":0,"state":3,"time":-1},
@@ -38,8 +38,8 @@
                 "control_status":true,
                 "status":
                 [
-                    {"dir":0,"state":1,"time":-1},
-                    {"dir":1,"state":1,"time":-1}
+                    {"dir":0,"state":3,"time":-1},
+                    {"dir":1,"state":3,"time":-1}
                 ]
             },
             {
@@ -71,11 +71,11 @@
                     "height":0.640000,
                     "width":1.470000
                 },
-                "control_status":true,
+                "control_status":false,
                 "status":
                 [
-                    {"dir":0,"state":1,"time":-1},
-                    {"dir":1,"state":1,"time":-1}
+                    {"dir":0,"state":3,"time":-1},
+                    {"dir":1,"state":3,"time":-1}
                 ]
             }
         ]

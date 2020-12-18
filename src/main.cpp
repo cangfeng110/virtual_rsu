@@ -11,24 +11,27 @@
 
 #include "mqtt/async_client.h"
 using namespace traffic_light;
+using namespace std;
 
 const std::string SERVER_ADDRESS("tcp://localhost:1883");
 const std::string CLIENT_ID("RSU");
 
+// cloud－－－>rus
 const std::string SUB_TOPIC("/mqtt_backend/+/traffic_light_status");
-
+// rsu－－－>cloud
 const std::string PUB_TOPIC("/mqtt_backend/traffic_light_status");
 
 int main() {
+    vector<int> attach_map = {2020061611, 2020061612};
     mqtt::connect_options connOpts;
 	connOpts.set_keep_alive_interval(20);
 	connOpts.set_clean_session(true);
 
     mqtt::async_client client(SERVER_ADDRESS, CLIENT_ID);
 
-    std::string file_name;
-    std::cout << "please input light message file name:";
-    std::cin >> file_name;
+    std::string file_name = "traffic_light_status.json";
+    // std::cout << "please input light message file name:";
+    // std::cin >> file_name;
     LightMessage light_message(file_name);
 
     traffic_light::callback cb(client, connOpts, light_message, SUB_TOPIC);
@@ -48,9 +51,10 @@ int main() {
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
         if (!light_message.flag_status())
             continue;
-        std::string send_message = light_message.GetLightMessage();
-        client.publish(PUB_TOPIC, send_message.c_str(), send_message.length(), 1, false);
-
+        for (auto& id : attach_map) {
+            std::string send_message = light_message.GetLightMessage(id);
+            client.publish(PUB_TOPIC, send_message.c_str(), send_message.length(), 1, false);
+        }
     }
     return 0;
 }

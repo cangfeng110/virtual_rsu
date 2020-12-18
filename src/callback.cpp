@@ -69,6 +69,9 @@ void callback::on_success(const mqtt::token& tok) {
 }
 
 void callback::delivery_complete(mqtt::delivery_token_ptr tok) {
-		std::cout << "\tDelivery complete for token: "
-			      << (tok ? tok->get_message_id() : -1) << std::endl;
+        static int count = 0;
+        if (count % 100 == 0)
+		    std::cout << "\tDelivery complete for token: "
+			          << (tok ? tok->get_message_id() : -1) << std::endl;
+        ++count;
 }

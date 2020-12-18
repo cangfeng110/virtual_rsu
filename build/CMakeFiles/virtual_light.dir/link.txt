@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/virtual_light.dir/src/light_message.cpp.o CMakeFiles/virtual_light.dir/src/main.cpp.o CMakeFiles/virtual_light.dir/src/callback.cpp.o  -o virtual_light -rdynamic -lpaho-mqtt3as -lpaho-mqttpp3 -lpthread 
