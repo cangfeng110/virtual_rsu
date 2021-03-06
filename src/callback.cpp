@@ -60,7 +60,7 @@ void callback::message_arrived(mqtt::const_message_ptr msg) {
 
 void callback::on_success(const mqtt::token& tok) {
 		std::cout << "Subscription success";
-		if (tok.get_message_id() != 0)
+		//if (tok.get_message_id() != 0)
 			std::cout << " for token: [" << tok.get_message_id() << "]" << std::endl;
 		auto top = tok.get_topics();
 		if (top && !top->empty())

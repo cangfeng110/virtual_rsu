@@ -39,3 +39,7 @@ done
 #    sleep 0.5
 #done
 
+#set platoon info
+mosquitto_pub -h localhost -p 1883 -t "/mqtt_backend/console_info" -m '{"channel":"console_info","cmd": 1,"params":{"attached_map":20200415130, "desire_dis":10.0,"platoon_id":10,"members":["e100.w.car1","e100.w.car2","e100.w.car3"]}}'
+#cancle platoon
+mosquitto_pub -h localhost -p 1883 -t "/mqtt_backend/console_info" -m '{"channel":"console_info","cmd": 0,"params":{"attached_map":20200415130, "desire_dis": 10.0, platoon_id":10,"members":["e100.w.car1","e100.w.car2","e100.w.car3"]}}'

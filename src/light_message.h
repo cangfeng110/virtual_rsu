@@ -14,7 +14,7 @@ public:
     bool UpdateMessage(std::string in);
     void set_flag(bool f) {flag_ = f;}
     bool flag_status() { return flag_;}
-    std::string GetLightMessage(int map_id);
+    std::string GetLightMessage();
 
 private:
     nlohmann::json light_message_;

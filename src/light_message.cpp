@@ -25,16 +25,12 @@ bool LightMessage::UpdateMessage(std::string in) {
             auto& lights = params["lights"];
             for (auto& light : lights) {
                 int id = light["id"];
-                int dir = light["dir"];
                 int status = light["state"];
+                int dir = light["dir"];
                 for (auto& pre_light : pre_lights) {
                     if (pre_light["id"] == id) {
-                        for (auto& pre_status : pre_light["status"]) {
-                            if (pre_status["dir"] == dir) {
-                                pre_status["state"] = status;
-                                std::cout << "change light id:" << id << " dir:" << dir << " state:" << pre_status["state"] << std::endl;
-                            }
-                        }
+                        pre_light["status"]["state"] = status;
+                        std::cout << "change light id:" << id << " dir:" << dir << " state:" << pre_light["status"]["state"]  << std::endl;
                     }
                 }
             }
@@ -47,10 +43,10 @@ bool LightMessage::UpdateMessage(std::string in) {
     }
 }
 
-std::string LightMessage::GetLightMessage(int map_id) {
-    auto& params = light_message_["params"];
-    if (params.empty())
-        return std::string("light status empty");
-    params["attached_map"] = map_id;
+std::string LightMessage::GetLightMessage() {
+    // auto& params = light_message_["params"];
+    // if (params.empty())
+    //     return std::string("light status empty");
+    // params["attached_map"] = map_id;
     return light_message_.dump();
 }

@@ -1,82 +1,50 @@
 {
     "timestamp":1596768334,
     "device_id":"light_test",
+    "channel": "traffic_light_status",
     "params":
     {
-        "attached_map": 2020061611,
-        "device_loc":{"x":0,"y":0,"z":0},
         "lights":
         [
             {
                 "id":0,
-                "heading":0.457000,
-                "pose":
-                {
-                    "x":3409442.707135,
-                    "y":-197012.114599,
-                    "z":4.700000,
-                    "height":1.470000,
-                    "width":0.640000
-                },
                 "control_status":false,
+                "control_direction": [0,1],
                 "status":
-                [
-                    {"dir":0,"state":3,"time":-1},
-                    {"dir":1,"state":3,"time":-1}
-                ]
+                {
+                    "state":3,
+                    "time":-1
+                }
             },
             {
                 "id":1,
-                "heading":-1.110000,
-                "pose":
-                {
-                    "x":3409453.674939,
-                    "y":-197006.859479,
-                    "z":4,
-                    "height":1.470000,
-                    "width":0.640000},
                 "control_status":true,
+                "control_direction": [0,1],
                 "status":
-                [
-                    {"dir":0,"state":3,"time":-1},
-                    {"dir":1,"state":3,"time":-1}
-                ]
+                {
+                    "state":3,
+                    "time":-1
+                }
             },
             {
                 "id":2,
-                "heading":-2.680000,
-                "pose":
-                {
-                    "x":3409449.147884,
-                    "y":-196998.122587,
-                    "z":4.700000,
-                    "height":0.640000,
-                    "width":1.470000
-                },
                 "control_status":true,
+                "control_direction": [0,1],
                 "status":
-                [
-                    {"dir":0,"state":3,"time":-1},
-                    {"dir":1,"state":3,"time":-1}
-                ]
+                {
+                    "state":3,
+                    "time":-1
+                }
             },
             {
                 "id":3,
-                "heading":2.020000,
-                "pose":
-                {
-                    "x":3409437.733353,
-                    "y":-197002.442981,
-                    "z":4,
-                    "height":0.640000,
-                    "width":1.470000
-                },
                 "control_status":false,
+                "control_direction": [0,1],
                 "status":
-                [
-                    {"dir":0,"state":3,"time":-1},
-                    {"dir":1,"state":3,"time":-1}
-                ]
+                {
+                    "state":3,
+                    "time":-1
+                }
             }
         ]
     }

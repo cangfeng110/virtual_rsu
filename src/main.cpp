@@ -51,10 +51,8 @@ int main() {
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
         if (!light_message.flag_status())
             continue;
-        for (auto& id : attach_map) {
-            std::string send_message = light_message.GetLightMessage(id);
-            client.publish(PUB_TOPIC, send_message.c_str(), send_message.length(), 1, false);
-        }
+        std::string send_message = light_message.GetLightMessage();
+        client.publish(PUB_TOPIC, send_message.c_str(), send_message.length(), 1, false);
     }
     return 0;
 }
