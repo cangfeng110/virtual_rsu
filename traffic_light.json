@@ -1,0 +1,1 @@
+{"cmd":"traffic_light_status","params":{"device_id":"light_test","lights":[{"dir":0,"id":2,"state":1}]}}

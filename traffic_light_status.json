@@ -8,42 +8,46 @@
         [
             {
                 "id":0,
-                "control_status":false,
+                "control_status":true,
                 "control_direction": [0,1],
                 "status":
                 {
-                    "state":3,
-                    "time":-1
+                    "state":1,
+                    "time":-1,
+                    "error": "00000000"
                 }
             },
             {
                 "id":1,
-                "control_status":true,
+                "control_status": true,
                 "control_direction": [0,1],
                 "status":
                 {
                     "state":3,
-                    "time":-1
+                    "time":-1,
+                    "error": "0000000"
                 }
             },
             {
                 "id":2,
+                "control_status": true,
+                "control_direction": [0,1],
+                "status":
+                {
+                    "state":3,
+                    "time":-1,
+                    "error": "00000000"
+                }
+            },
+            {
+                "id":3,
                 "control_status":true,
                 "control_direction": [0,1],
                 "status":
                 {
                     "state":3,
-                    "time":-1
-                }
-            },
-            {
-                "id":3,
-                "control_status":false,
-                "control_direction": [0,1],
-                "status":
-                {
-                    "state":3,
-                    "time":-1
+                    "time":-1,
+                    "error": "00000000"
                 }
             }
         ]
